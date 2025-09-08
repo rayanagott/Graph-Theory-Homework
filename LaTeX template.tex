@@ -1,0 +1,52 @@
+%This is a Latex file.
+\documentclass[12pt]{article}
+\usepackage{latexsym,fancyhdr,amsmath,amsfonts,amsthm,dsfont}
+\usepackage{amssymb}
+
+% margins are relative to the default of 1 in
+%\topmargin       -0.2 in
+
+\topmargin        -0.2 in
+\textheight       8.4 in
+\oddsidemargin    0 in     % this is for pages 1, 3, 5, ...
+\evensidemargin   0 in     % and this for 2, 4, 6, ...
+\textwidth        6.5 in
+%\headheight       15 in     % we won't have a running head, nor
+\headsep          .35 in     % any extra space between head and text
+
+%\parindent 0pt
+
+\pagestyle{fancy} \lhead{\sf MTH 317} \chead{\sf Homework \#?}
+\rhead{\sf Your Name} \lfoot{} \cfoot{} \rfoot{}
+
+\newcommand{\C}{\mathds{C}}
+\newcommand{\I}{\mathds{I}}
+\newcommand{\N}{\mathds{N}}
+\newcommand{\Q}{\mathds{Q}}
+\newcommand{\R}{\mathds{R}}
+\newcommand{\Z}{\mathds{Z}}
+
+\begin{document}
+\begin{enumerate}
+\item[1.1.9] Show that the summation identity \begin{equation}\label{1.1.9identity}1+4+9+\cdots+n^2 = \displaystyle\frac{n(n+1)(2n+1)}{6}\end{equation} holds for all $n \in \N$.
+
+    \begin{proof}
+    In the case of $n = 1$, we have the left hand side of (\ref{1.1.9identity}) is 1, while the right hand side is $\displaystyle\frac{1(2)(3)}{6} = 1$.  So (\ref{1.1.9identity}) holds for $n = 1$.  
+    
+    Assume (\ref{1.1.9identity}) holds for some $k \in \N$.  We will now show that under this assumption, the identity holds for $k+1$.  We see that
+    $$\begin{aligned}
+    1 + 4 + 9 + \cdots + (k+1)^2 &= 1 + 4 + 9 + \cdots + k^2 + (k+1)^2\\
+    &= \frac{k(k+1)(2k+1)}{6} + (k+1)^2, \text{ by assumption}\\
+    &= (k+1)\left[\frac{k(2k+1)}{6} + (k+1)\right]\\
+    &= (k+1)\left[\frac{k(2k+1)+6(k+1)}{6}\right]\\
+    &= (k+1)\cdot\frac{2k^2+7k+6}{6}\\
+    &= (k+1)\cdot\frac{(k+2)(2k+3)}{6}\\
+    &= \frac{(k+1)(k+2)(2(k+1)+1)}{6}.
+    \end{aligned}$$  Therefore, by the Principle of Mathematical Induction, (\ref{1.1.9identity}) holds for all $n \in \N$.
+    \end{proof}
+    
+ \item[3.2.3] Given that $p\nmid n$ or $p\not| n$ for all primes $p\le\sqrt[3]{n}$
+\end{enumerate}
+
+
+\end{document}
