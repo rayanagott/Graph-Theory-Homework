@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1757348188.91506 "c:/Users/rayan/OneDrive/Documents/GitHub/Graph-Theory-Homework/1/Homework_1.tex" "Homework_1.pdf" "Homework_1" 1757348189.60782 0
+["pdflatex"] 1757368722.86256 "c:/Users/rayan/OneDrive/Documents/GitHub/Graph-Theory-Homework/1/Homework_1.tex" "Homework_1.pdf" "Homework_1" 1757368723.60547 0
   "C:/Users/rayan/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1756931645 81068 299f700eb05b1217173e62b88b513bd0 ""
   "C:/Users/rayan/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1731536073 11986955 0da2b604083fc9ec29af48b95250daf9 ""
   "C:/Users/rayan/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -19,13 +19,17 @@
   "C:/Users/rayan/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy10.tfm" 1136765053 1124 6c73e740cf17375f03eec0ee63599741 ""
   "C:/Users/rayan/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy6.tfm" 1136765053 1116 933a60c408fc0a863a92debe84b2d294 ""
   "C:/Users/rayan/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy8.tfm" 1136765053 1120 8b7d695260f3cff42e636090a8002094 ""
+  "C:/Users/rayan/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmti12.tfm" 1136765053 1484 ed72f8f5cf654cda15ecc8e32bfcbee5 ""
   "C:/Users/rayan/AppData/Local/Programs/MiKTeX/fonts/tfm/public/latex-fonts/lasy10.tfm" 1136765053 520 82a3d37183f34b6eb363a161dfc002c2 ""
   "C:/Users/rayan/AppData/Local/Programs/MiKTeX/fonts/tfm/public/latex-fonts/lasy6.tfm" 1136765053 520 4889cce2180234b97cad636b6039c722 ""
   "C:/Users/rayan/AppData/Local/Programs/MiKTeX/fonts/tfm/public/latex-fonts/lasy8.tfm" 1136765053 520 7bb3abb160b19e0ed6ac404bb59052b7 ""
   "C:/Users/rayan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1247596667 36741 0ee9e374ec3e30da87cdfb0ea3575226 ""
+  "C:/Users/rayan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1247596666 35469 dcf3a5f2fc1862f5952e3ee5eb1d98c4 ""
   "C:/Users/rayan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
+  "C:/Users/rayan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247596667 32726 39f0f9e62e84beb801509898a605dbd5 ""
   "C:/Users/rayan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb" 1247596666 24393 3b7eb51a67a0a62aec5849271bdb9c2e ""
   "C:/Users/rayan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "C:/Users/rayan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1247596667 36118 fad905eba93cff5bce1e185fe980a177 ""
   "C:/Users/rayan/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/rayan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcore.code.tex" 1673775190 1016 1c2b89187d12a2768764b83b4945667c ""
   "C:/Users/rayan/AppData/Local/Programs/MiKTeX/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex" 1673775190 43820 1fef971b75380574ab35a0d37fd92608 ""
@@ -117,9 +121,9 @@
   "C:/Users/rayan/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgfkeys.sty" 1673775190 274 5ae372b7df79135d240456a1c6f2cf9a ""
   "C:/Users/rayan/AppData/Local/Programs/MiKTeX/tex/latex/pgf/utilities/pgfrcs.sty" 1673775190 325 f9f16d12354225b7dd52a3321f085955 ""
   "C:/Users/rayan/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "Homework_1.aux" 1757348189 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "Homework_1.tex" 1757348188 2785 6563583ab7369057c09c1c0063e1de42 ""
-  "c:/Users/rayan/OneDrive/Documents/GitHub/Graph-Theory-Homework/1/Homework_1.tex" 1757348188 2785 6563583ab7369057c09c1c0063e1de42 ""
+  "Homework_1.aux" 1757368723 32 044b7f8fc9779af7531264e0c5c84b6d "pdflatex"
+  "Homework_1.tex" 1757368722 5176 f5406e137d2bb6fcfe26f59ba4028fc0 ""
+  "c:/Users/rayan/OneDrive/Documents/GitHub/Graph-Theory-Homework/1/Homework_1.tex" 1757368722 5176 f5406e137d2bb6fcfe26f59ba4028fc0 ""
   (generated)
   "Homework_1.aux"
   "Homework_1.log"

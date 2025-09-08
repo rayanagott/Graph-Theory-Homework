@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.13)  8 SEP 2025 11:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.13)  8 SEP 2025 16:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -404,24 +404,33 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [1{C:/Users/rayan/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
-] (Homework_1.aux)
+]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[2] (Homework_1.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 13557 strings out of 473681
- 275490 string characters out of 5719194
- 635112 words of memory out of 5000000
- 36411 multiletter control sequences out of 15000+600000
- 563339 words of font info for 58 fonts, out of 8000000 for 9000
+ 13568 strings out of 473681
+ 275647 string characters out of 5719194
+ 639112 words of memory out of 5000000
+ 36421 multiletter control sequences out of 15000+600000
+ 563686 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,11n,107p,456b,748s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/rayan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/rayan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/rayan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/rayan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Homework_1.pdf (1 page, 53349 bytes).
+ 102i,11n,107p,456b,783s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/rayan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/rayan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/rayan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/rayan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/rayan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/rayan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/rayan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on Homework_1.pdf (2 pages, 87309 bytes).
 PDF statistics:
- 29 PDF objects out of 1000 (max. 8388607)
+ 47 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

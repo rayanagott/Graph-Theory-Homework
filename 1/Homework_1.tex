@@ -76,13 +76,54 @@
 \noindent
 This works because the graph is connected and the distance between any two vertices is 1, which is odd.  This is the only graph because if we remove any edge, the distance between some vertices will become 2.
 
-\item[1.16]
+\item[1.16] Let $P = (u, u_1, u_2, \ldots, u_k, v)$ be a u-v path of length $k \ge 1$ be a u-v geodisic in a cannected graph G. Prove that d(u, v) = i for each integer i with $1 \le i \le k$. 
+ \begin{proof}
+Assume that there exists some integer $i$ with $1 \le i \le k$ such that $d(u, v) \ne i$.  Since $P$ is a u-v geodesic, we know that $d(u, v) = k$. 
+ Therefore, $d(u, v) > i$.  This means that there is no u-v path of length $i$.  However, the path $(u, u_1, u_2, \ldots, u_i, \ldots, u_k, v)$ contains a u-v path of length $i$, 
+ which is a contradiction.  Therefore, for each integer $i$ with $1 \le i \le k$, we have $d(u, v) = i$.
+\end{proof}
 
 \item[1.17]
-\item[a] 
-\item[b] 
+\item[a] Prove that is P and Q are the two longest paths in a connected graph, then P and Q have at least one vertex in common.
+\begin{proof}
+Assume that P and Q do not have any vertices in common.  Let $u$ be an endpoint of P and let $v$ be an endpoint of Q.  Since the graph is connected, there exists a u-v path, call it R. 
+ Since P and Q do not have any vertices in common, R must contain a vertex that is not on P or Q.  Therefore, the path that starts at u, follows P to the other endpoint of P, then follows R to v, and finally follows Q to the other endpoint of Q is longer than either P or Q.  
+ This contradicts the claim that P and Q are the longest paths in the graph.  Therefore, P and Q must have at least one vertex in common.
+\end{proof}
 
-\item[1.20 a)] What is the minimum size of a connected subgrpah of G containing u and v? 
+\item[b] Prove of disprove: if G is a connected graph of diameter k, and P and Q are two geodesics of length k in G, then P and Q have at least one vertex in common.
+\begin{proof}
+False.  Consider the following graph:
+\begin{center}
+\begin{tikzpicture}[scale=1, every node/.style={circle, draw, fill=white, inner sep=2pt}]
+    \node (A) at (0,2) {};
+    \node (B) at (2,3) {};
+    \node (C) at (4,2) {};
+    \node (D) at (4,0) {};
+    \node (E) at (2,-1) {};
+    \node (F) at (0,0) {};          
+    \draw (A) -- (B);
+    \draw (A) -- (C);
+    \draw (A) -- (D);
+    \draw (A) -- (E);
+    \draw (A) -- (F);
+    \draw (B) -- (C);
+    \draw (B) -- (D);
+    \draw (B) -- (E);
+    \draw (B) -- (F);
+    \draw (C) -- (D);
+    \draw (C) -- (E);
+    \draw (C) -- (F);
+    \draw (D) -- (E);
+    \draw (D) -- (F);
+    \draw (E) -- (F);
+\end{tikzpicture}
+\end{center}
+\noindent
+The diameter of the graph is 2.  The paths (A, B, C) and (D, E, F) are both geodesics of length 2, but they do not share any vertices.
+\end{proof}
+
+\item[1.20 a] What is the minimum size of a connected subgrpah of G containing u and v? 
 \\
 \noindent
 By definition, d(u, v) is the shortest u-v path. A path is
