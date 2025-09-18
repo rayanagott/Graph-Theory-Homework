@@ -131,10 +131,8 @@ if $i \neq j$ and j is a multiple of i.
 \item[2.6] Prove that if a graph of order 3$n$ ($n$ $\geq$ 1) has $n$ vertices of each of the degrees
 \item[] $n$ - 1, $n$, and $n$ +1, then $n$ is even.
    \begin{proof}
-Let $G$ be a graph of order $3n$ with $n$ vertices of each of the degrees $n-1$, $n$, and $n+1$. 
-We can calculate the sum of all degrees by:
-$$\sigma \deg(v) = n(n-1) + n(n) + n(n+1) = n((n-1)+n+(n+1)) = n(3n) = 3n^2.$$
-$3n^2$ must be even because each edge contributes 2 to the sum of degrees. 
+Let $G$ be a graph of order $3n$ with $n$ vertices of each of the degrees $n-1$, $n$, and $n+1$.
+By Theorem 2.1, the sum of degrees of a graph is 2$m$, where $m$ is the size of $G$. 2$m$ is even, so 3$n^2$ must be even. 
 Since 3 is odd, $n^2$ must be even, and thus $n$ is even.
    \end{proof}
 \end{enumerate}
