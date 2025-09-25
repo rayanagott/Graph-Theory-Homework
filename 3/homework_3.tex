@@ -19,8 +19,8 @@
 
 %\parindent 0pt
 
-\pagestyle{fancy} \lhead{\sf MTH 317} \chead{\sf Homework \#?}
-\rhead{\sf Your Name} \lfoot{} \cfoot{} \rfoot{}
+\pagestyle{fancy} \lhead{\sf MTH 317} \chead{\sf Homework 3}
+\rhead{\sf Rayana Gottschall} \lfoot{} \cfoot{} \rfoot{}
 
 \newcommand{\C}{\mathds{C}}
 \newcommand{\I}{\mathds{I}}
@@ -40,47 +40,64 @@
     order = 20
 \end{center}
 
-\item[2.26]
+\item[2.26] 
+\item[a] Show that a graph G is regular if and only if its complement is regular.
+
+
+\item[b] Show that if G and $\overline{G}$ are r-regular for some nonnegative integer r, then G has odd order.
+
+
 \item[2.32] Determine if the following sequences are graphic. If so, construct a graph.
 \item[b] 
-
-    Start: 6,3,3,3,3,2,2,2,2,1,1
     \newline
-    Remove 6 and subtract 1 from the first 6 remaining numbers: 2,2,2,2,1,1,1,1,1,1
+    $S_1$: 6,3,3,3,3,2,2,2,2,1,1
     \newline
-    Remove 2 and subtract 1 from the first 2 remaining numbers: 1,1,2,1,1,1,1,1,1
+    $S_2$: 2,2,2,2,2,2,1,1,1,1
     \newline
-    Remove 2 and subtract 1 from the first 2 remaining numbers: 1,1,1,1,1,1,1
+    $S_3$: 2,2,2,1,1,1,1,1,1
     \newline
-    Remove 1 and subtract 1 from the first remaining number: 1,1,1,1,0
+    $S_4$: 1,1,1,1,1,1,1,1. Here, we have an even number of 1s, and can recognize this is graphic.
     \newline
-    Remove 1 and subtract 1 from the first remaining number: 1,1,0,0,0
-    \newline        
-    Remove 1 and subtract 1 from the first remaining number: 0,0,0,0
-    \newline
-    All zeros, so the sequence is graphic.
+    \includegraphics{grapha.png}
 
 
 \item[d] 
 \begin{center}
-    Start: 7,5,4,4,4,3,2,1
     \newline
-    Remove 7 and subtract 1 from the first 7 remaining numbers: 4,3,3,3,2,1,0
-    \newline        
-    Remove 4 and subtract 1 from the first 4 remaining numbers: 2,2,2,1,0,0
+    $S_1$: 7,5,4,4,4,3,2,1
     \newline
-    Remove 2 and subtract 1 from the first 2 remaining numbers: 1,1,1,0,0,0
-    \newline        
-    Remove 1 and subtract 1 from the first remaining number: 1,1,0,0,0
+    $S_2$: 4,3,3,3,2,1,0
     \newline
-    Remove 1 and subtract 1 from the first remaining number: 1,0,0,0,0
-    \newline        
-    Remove 1 and subtract 1 from the first remaining number: 0,0,0,0
+    $S_3$: 2,2,2,1,1
     \newline
-    All zeros, so the sequence is graphic.
+    $S_4$: 1,1,1,1. Here, we have an even number of 1s, and can recognize this is graphic.
+    \newline
+    \includegraphics{graphd.png}
 
 \end{center}
-\item[2.33]
+
+
+\item[2.33] Prove that for every integer x with 0 $\leq$ x $\leq$ 5, the sequence x,1,2,3,5,5 is not graphical.
+\begin{proof}
+    The sum of all degrees must be even. Here, the sum is x + 16. So x must be even. Therfore, x $\neq$ 1, 3, 5.
+    That leaves 0, 2, and 4. We can use Theorem 2.10 to show each case is not graphical.
+    \newline
+    x = 0:
+    $S_1$: 1,2,3,5,5 or 5,5,3,2,1. This is not graphical because there is a vertex of degree 5, but only 4 other vertices.
+    \newline
+    x = 2:
+    $S_1$: 2,1,2,3,5,5 or 5,5,3,2,2,1
+    \newline
+    $S_2$: 4,3,1,1,0. This is not graphical because there is a vertex of degree 4, but only 3 other vertices.
+    \newline
+    x = 4: 
+    \newline
+    $S_1$: 4,1,2,3,5,5 or 5,5,4,3,2,1    
+    \newline
+    $S_2$: 4,3,2,1,0. This is not graphical because there is a vertex of degree 4, but only 3 other vertices.
+    \newline
+    Therefore, for every integer x with 0 $\leq$ x $\leq$ 5, the sequence x,1,2,3,5,5 is not graphical. 
+\end{proof} 
 
 
 \end{enumerate}

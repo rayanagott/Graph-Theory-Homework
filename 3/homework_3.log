@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.13)  24 SEP 2025 11:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.13)  25 SEP 2025 12:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -350,7 +350,8 @@ File: tikzlibrarygraphs.code.tex 2023-01-15 v3.1.10 (3.1.10)
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count305
 \l__pdf_internal_box=\box65
-) (homework_3.aux)
+)
+No file homework_3.aux.
 \openout1 = `homework_3.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
@@ -367,7 +368,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
 LaTeX Font Info:    ... okay on input line 31.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
 LaTeX Font Info:    ... okay on input line 31.
- (C:\Users\rayan\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+(C:\Users\rayan\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count306
 \scratchdimen=\dimen259
@@ -405,6 +406,25 @@ Package pdftex.def Info: IMG_1782.jpg  used on input line 39.
 (pdftex.def)             Requested size: 234.87749pt x 337.13875pt.
 
 
+c:/Users/rayan/OneDrive/Documents/GitHub/Graph-Theory-Homework/3/homework_3.tex:52: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52     \newline
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<grapha.png, id=5, 289.83281pt x 177.66376pt>
+File: grapha.png Graphic file (type png)
+<use grapha.png>
+Package pdftex.def Info: grapha.png  used on input line 61.
+(pdftex.def)             Requested size: 289.83209pt x 177.66331pt.
+
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -416,6 +436,25 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
  <./IMG_1782.jpg>]
 
+c:/Users/rayan/OneDrive/Documents/GitHub/Graph-Theory-Homework/3/homework_3.tex:66: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.66     \newline
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<graphd.png, id=15, 328.97906pt x 178.41656pt>
+File: graphd.png Graphic file (type png)
+<use graphd.png>
+Package pdftex.def Info: graphd.png  used on input line 75.
+(pdftex.def)             Requested size: 328.97826pt x 178.4161pt.
+
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -423,24 +462,33 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[2] (homework_3.aux)
+[2 <./grapha.png> <./graphd.png>]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[3] (homework_3.aux)
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 14162 strings out of 473681
- 294251 string characters out of 5719194
- 657215 words of memory out of 5000000
- 37012 multiletter control sequences out of 15000+600000
- 563339 words of font info for 58 fonts, out of 8000000 for 9000
+ 14177 strings out of 473681
+ 294442 string characters out of 5719194
+ 657231 words of memory out of 5000000
+ 37028 multiletter control sequences out of 15000+600000
+ 563686 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,11n,107p,479b,471s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/rayan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/rayan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/rayan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb>
-Output written on homework_3.pdf (2 pages, 658777 bytes).
+ 102i,11n,107p,479b,453s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/rayan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/rayan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/rayan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/rayan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/rayan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/rayan/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on homework_3.pdf (3 pages, 698348 bytes).
 PDF statistics:
- 28 PDF objects out of 1000 (max. 8388607)
+ 51 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
