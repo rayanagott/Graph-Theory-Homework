@@ -31,25 +31,57 @@
 \begin{document}
 \begin{enumerate}
 \item[2.20]  Show that if G is a connected graph that is not regular, then G contains adjacent vertices
- u and v such that deg(u) $>$ deg(v).
+ u and v such that deg(u) $\neq$ deg(v).
+\begin{proof}
+Since $G$ is not regular, there exist vertices $x$ and $y$ with $\deg(x) \neq \deg(y)$.
+Because $G$ is connected, there is a path $P : x=v_0,v_1,\dots,v_k=y$ between them. 
 
-    
-\item[2.22] 
+\textbf{Case 1: ($x$ and $y$ are adjacent)} If $k=1$, then $x$ and $y$ are adjacent and we are done. 
+
+
+\textbf{Case 2: ($x$ and $y$ are not adjacent)} If $k \geq 2$, consider the sequence of degrees
+\[
+\deg(v_0), \deg(v_1), \dots, \deg(v_k).
+\]
+This sequence begins with $\deg(v_0)=\deg(x)$ and ends with $\deg(v_k)=\deg(y)$, which are different. 
+Therefore, there must exist some index $i$ with $0 \leq i < k$ such that $\deg(v_i) \neq \deg(v_{i+1})$. 
+Since $v_i$ and $v_{i+1}$ are adjacent in $G$, this gives the desired pair of adjacent vertices of unequal degree.
+
+Thus, in all cases $G$ contains adjacent vertices $u,v$ with $\deg(u)\neq\deg(v)$.
+\end{proof}
+
+\noindent\textbf{2.22}
 \begin{center}
     \includegraphics[width=0.5\textwidth]{IMG_1782.jpg}
-    order = 20
+    \newline
+    Theorem 2.7: $r$ $\geq$ $\delta$(G). Here, r = 3 and $\delta$(G) = 3, so the theorem holds.
+    Order = 20
 \end{center}
 
 \item[2.26] 
 \item[a] Show that a graph G is regular if and only if its complement is regular.
+\begin{proof}
+    ($\Rightarrow$) Suppose G is r-regular. Then every vertex has degree r. 
+    The degree of a vertex v in $\overline{G}$ is given by deg(v) = n - 1 - deg(v) in G, where n is the order of G.
+    Since every vertex in G has degree r, every vertex in $\overline{G}$ has degree n - 1 - r. Therefore, $\overline{G}$ is (n - 1 - r)-regular.
+    \newline
+    ($\Leftarrow$) Suppose $\overline{G}$ is s-regular. Then every vertex has degree s. 
+    The degree of a vertex v in G is given by deg(v) = n - 1 - deg(v) in $\overline{G}$, where n is the order of G.
+    Since every vertex in $\overline{G}$ has degree s, every vertex in G has degree n - 1 - s. Therefore, G is (n - 1 - s)-regular.
+    \newline
+    Thus, a graph G is regular if and only if its complement is regular.
+\end{proof} 
 
 
 \item[b] Show that if G and $\overline{G}$ are r-regular for some nonnegative integer r, then G has odd order.
-
+\begin{proof}
+    Let the order of G be n. Then the degree of each vertex in $\overline{G}$ is n - 1 - r. Since $\overline{G}$ is r-regular, we have n - 1 - r = r. 
+    Therefore, n - 1 = 2r, and n = 2r + 1. Since r is a nonnegative integer, 2r is even, and adding 1 gives an odd number. 
+    So, n is odd, and G has odd order.
+\end{proof}
 
 \item[2.32] Determine if the following sequences are graphic. If so, construct a graph.
 \item[b] 
-    \newline
     $S_1$: 6,3,3,3,3,2,2,2,2,1,1
     \newline
     $S_2$: 2,2,2,2,2,2,1,1,1,1
@@ -62,8 +94,6 @@
 
 
 \item[d] 
-\begin{center}
-    \newline
     $S_1$: 7,5,4,4,4,3,2,1
     \newline
     $S_2$: 4,3,3,3,2,1,0
@@ -74,7 +104,6 @@
     \newline
     \includegraphics{graphd.png}
 
-\end{center}
 
 
 \item[2.33] Prove that for every integer x with 0 $\leq$ x $\leq$ 5, the sequence x,1,2,3,5,5 is not graphical.
