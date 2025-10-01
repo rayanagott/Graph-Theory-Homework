@@ -1,0 +1,78 @@
+%This is a Latex file.
+\documentclass[12pt]{article}
+\usepackage{latexsym,fancyhdr,amsmath,amsfonts,amsthm,dsfont}
+\usepackage{amssymb}
+
+% margins are relative to the default of 1 in
+%\topmargin       -0.2 in
+
+\topmargin        -0.2 in
+\textheight       8.4 in
+\oddsidemargin    0 in     % this is for pages 1, 3, 5, ...
+\evensidemargin   0 in     % and this for 2, 4, 6, ...
+\textwidth        6.5 in
+%\headheight       15 in     % we won't have a running head, nor
+\headsep          .35 in     % any extra space between head and text
+
+%\parindent 0pt
+
+\pagestyle{fancy} \lhead{\sf MTH 317} \chead{\sf Homework 4}
+\rhead{\sf Rayana Gottschall} \lfoot{} \cfoot{} \rfoot{}
+
+\newcommand{\C}{\mathds{C}}
+\newcommand{\I}{\mathds{I}}
+\newcommand{\N}{\mathds{N}}
+\newcommand{\Q}{\mathds{Q}}
+\newcommand{\R}{\mathds{R}}
+\newcommand{\Z}{\mathds{Z}}
+
+\begin{document}
+\begin{enumerate}
+\item[2.38] For the adjacency matrix A, determine $A^2$ and $A^3$.
+\newline
+$A^2$ =
+\[
+\begin{bmatrix}
+2 & 1 & 1 & 1 & 0 \\
+1 & 2 & 1 & 1 & 0  \\
+1 & 1 & 3 & 0 & 1 \\
+1 & 1 & 0 & 2 & 0  \\ 
+0 & 0 & 1 & 0 & 1
+\end{bmatrix}
+\]
+
+$A^3$ =
+\[
+\begin{bmatrix}
+2 & 3 & 4 & 1 & 1 \\
+3 & 2 & 4 & 1 & 1  \\
+4 & 4 & 2 & 4 & 0 \\
+1 & 1 & 4 & 0 & 2  \\ 
+1 & 1 & 0 & 2 & 0
+\end{bmatrix}
+\]
+ 
+\item[2.41] 
+\item[] a) Compute $BB^t$
+\item[] $BB^t$ =
+\[
+\begin{bmatrix}
+3 & 1 & 1 & 1 & 0 \\
+1 & 2 & 0 & 1 & 0  \\
+1 & 0 & 2 & 1 & 0 \\
+1 & 1 & 1 & 4 & 1  \\ 
+0 & 0 & 0 & 1 & 1
+\end{bmatrix}
+\]
+\item[] b) What does the ($i, j$) entry of $BB^t$ represent?
+\newline
+The $i$ is the vertex and the $j$ is the edge. 0 means there is no connection, 1 means there is a connection. 
+And the diagonal entries represent the degrees for each vertex.
+
+\item[3.2] Give an example of 3 graphs of the same size, order, and degree sequence that are not isomorphic to one another.
+
+\item[4.2] 
+\item[4.4] 
+
+\end{enumerate}
+\end{document}
