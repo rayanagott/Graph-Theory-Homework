@@ -78,9 +78,28 @@ And the diagonal entries represent the degrees for each vertex.
 \end{center}
 Here each graph has order 6, size 6, and degree sequence (3, 2, 2, 2, 2, 1) but they are not isomorphic to one another.
 
-\item[4.2] 
-\item[] 
-\item[4.4] 
+\item[4.2] Prove every connected graph with even degrees contains no bridges.
+\begin{proof}
+    Let G be a connected graph with all vertices of even degree. 
+    Since all degrees are even, G is not a tree. Because G cannot contain a leaf (vertex
+    of degree 1). Since G is connected, not a tree, and only has even degrees, 
+    every edge of G must lie on a cycle. But by Theorem 4.1, no edge of a cycle is a bridge.
+    So G cannot contain a bridge.
+\end{proof}
+
+ 
+\item[4.4] Let G be a connected graph and let $e_1$ and $e_2$ be two edges of G.
+Prove that G -$e_1$ -$e_2$ has three components if and only if $e_1$ and $e_2$ are bridges.
+\begin{proof}
+     ($\Rightarrow$) Assume G -$e_1$ -$e_2$ has three components and $e_1$ and $e_2$
+        have distinct vertices.
+        Since G is connected, removing $e_1$ and $e_2$ must have increased the 
+        number of components from 1 to 3. So,  $e_1$ and $e_2$ are bridges.
+    \newline
+    ($\Leftarrow$) Assume $e_1$ and $e_2$ are bridges with distinct vertices.
+        Since G is connected and has 2 bridges, removing $e_1$ and $e_2$ must 
+        increase the number of components from 1 to 3. So, G -$e_1$ -$e_2$ has three components.
+\end{proof}
 
 \end{enumerate}
 \end{document}
