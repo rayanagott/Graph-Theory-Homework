@@ -1,0 +1,84 @@
+%This is a Latex file.
+\documentclass[12pt]{article}
+\usepackage{latexsym,fancyhdr,amsmath,amsfonts,amsthm,dsfont}
+\usepackage{amssymb}
+
+% margins are relative to the default of 1 in
+%\topmargin       -0.2 in
+
+\topmargin        -0.2 in
+\textheight       8.4 in
+\oddsidemargin    0 in     % this is for pages 1, 3, 5, ...
+\evensidemargin   0 in     % and this for 2, 4, 6, ...
+\textwidth        6.5 in
+%\headheight       15 in     % we won't have a running head, nor
+\headsep          .35 in     % any extra space between head and text
+
+%\parindent 0pt
+
+\pagestyle{fancy} \lhead{\sf MTH 317} \chead{\sf Homework 7}
+\rhead{\sf Rayana Gottschall} \lfoot{} \cfoot{} \rfoot{}
+
+\newcommand{\C}{\mathds{C}}
+\newcommand{\I}{\mathds{I}}
+\newcommand{\N}{\mathds{N}}
+\newcommand{\Q}{\mathds{Q}}
+\newcommand{\R}{\mathds{R}}
+\newcommand{\Z}{\mathds{Z}}
+
+\begin{document}
+\begin{enumerate}
+\item[6.2] Let $G_1$ and $G_2$ be two Eulerian graphs with no vertex in common. 
+    Let $v_1 \in V(G_1)$ and $v_2 \in V(G_2)$. 
+    Let $G$ be the graph obtained from $G_1 \cup G_2$ by adding the edge $v_1v_2$. 
+    What can be said about $G$?\\
+    \newline
+Since $G_1$ and $G_2$ are Eulerian, every vertex in each graph has even degree.
+If we add an additional edge $v_1v_2$ to form $G$, then the degrees of $v_1$ and $v_2$ 
+each increase by 1, making them odd. 
+Therefore, $G$ has exactly two vertices of odd degree and cannot be Eulerian.
+
+\item[6.6] Let G be a connected regular graph that is not eulerian. Prove that if $\overline{G}$
+    is connected, then $\overline{G}$ is eulerian.
+    \begin{proof}
+    
+    \end{proof}
+\item[6.8 (a)] Show that every nontrivial graph G has a closed spanning walk that contains every edge
+ of G exactly twice.
+    
+\item[6.10] Let G be a 6-regular graph of order 10 and let $u$, $v$ $\in$ V(G). Prove G - $v$ and G - $u$ - $v$ are all Hamiltonian.
+    \begin{proof}
+    Let \(G\) be a 6-regular graph of order 10, and let \(u,v \in V(G)\). In \(G - v\), 
+    the order is 9. Since \(G\) is 6-regular, removing \(v\) decreases the degree of each 
+    of its 6 neighbors by 1, so every vertex in \(G - v\) has degree at least \(5\). Thus 
+    \(\delta(G - v) \ge 5\). By Dirac’s Theorem, if a graph \(H\) of order \(n \ge 3\) 
+    satisfies \(\delta(H) \ge n/2\), then \(H\) is Hamiltonian. Here, \(n = 9\) and 
+    \(\delta(G - v) = 5 \ge 9/2\), so \(G - v\) is Hamiltonian. Now consider \(G - u - v\). 
+    The order is 8. Removing \(u\) and \(v\) decreases the degree of each vertex by at most 
+    2 (if the vertex was adjacent to both \(u\) and \(v\)), so \(\delta(G - u - v) \ge 6 - 2 
+    = 4\). Since \(4 = 8/2\), by Dirac’s Theorem, \(G - u - v\) 
+    is also Hamiltonian. Therefore, both \(G - v\) and \(G - u - v\) are Hamiltonian
+    \end{proof}
+
+\item[6.12] Let G be a 3-regular graph of order 12 and H a 4-regular graph
+of order 11.
+\item[(a)] Is G + H Eulerian?
+\newline
+    Yes. Originally in $G$, $\deg = 3$. In $G + H$, each vertex in $G$ gains an edge 
+    to all 11 vertices in $H$, so $\deg = 3 + 11 = 14$.\\
+    In $H$, $\deg = 4$, and in $G + H$ each vertex in $H$ gains an edge to all 
+    12 vertices in $G$, so $\deg = 4 + 12 = 16$.\\
+    Since all vertices have even degree, $G + H$ satisfies the condition for being 
+    Eulerian.
+\item[(b)] Is G + H Hamiltonian?
+\newline
+    Yes. By corollary 6.7, a graph of order $n \ge 3$ is Hamiltonian if 
+    $\delta(G) \ge \tfrac{n}{2}$.\\
+    Here, $n = 12 + 11 = 23$ and $\delta(G + H) = 14$, since 
+    $\min(14, 16) = 14$.\\
+    Because $14 \ge \tfrac{23}{2}$, the condition holds, so $G + H$ is Hamiltonian
+
+\end{enumerate}
+
+
+\end{document}

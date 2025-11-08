@@ -1,0 +1,106 @@
+%This is a Latex file.
+\documentclass[12pt]{article}
+\usepackage{latexsym,fancyhdr,amsmath,amsfonts,amsthm,dsfont}
+\usepackage{amssymb}
+\usepackage{graphicx} 
+
+% margins are relative to the default of 1 in
+%\topmargin       -0.2 in
+
+\topmargin        -0.2 in
+\textheight       8.4 in
+\oddsidemargin    0 in     % this is for pages 1, 3, 5, ...
+\evensidemargin   0 in     % and this for 2, 4, 6, ...
+\textwidth        6.5 in
+%\headheight       15 in     % we won't have a running head, nor
+\headsep          .35 in     % any extra space between head and text
+
+%\parindent 0pt
+
+\pagestyle{fancy} \lhead{\sf MTH 317} \chead{\sf Homework 6}
+\rhead{\sf Rayana Gottschall} \lfoot{} \cfoot{} \rfoot{}
+
+\newcommand{\C}{\mathds{C}}
+\newcommand{\I}{\mathds{I}}
+\newcommand{\N}{\mathds{N}}
+\newcommand{\Q}{\mathds{Q}}
+\newcommand{\R}{\mathds{R}}
+\newcommand{\Z}{\mathds{Z}}
+
+\begin{document}
+\begin{enumerate}
+\item[2.10] Prove that a connected graph of size at least 2 is non-seperable iff two adjacent edges of G lie on a common cycle.
+
+    \begin{proof}
+    ($\Rightarrow$) Assume G is non-seperable. Let e1 and e2 be two adjacent edges of G, with common vertex v. 
+    Since G is non-seperable, removing v does not disconnect G. Therefore, there exists a path P from one endpoint of e1 to one endpoint of e2 that does not pass through v. 
+    Combining e1, e2, and P forms a cycle containing both e1 and e2.
+    
+    ($\Leftarrow$) Assume that any two adjacent edges of G lie on a common cycle. Suppose G is separable. 
+    Then there exists a cut-vertex v such that G - v creates at least two components. Let e1 and e2 be two edges incident to v. 
+    Since e1 and e2 are adjacent they must lie on a common cycle C. Removing v from C would break the common cycle with e1 and e2.
+    This contradicts the claim that any two adjacent edges of G lie on a common cycle. 
+    Therefore, G must be non-seperable.
+
+    \end{proof}
+    
+
+ \item[2.12] If a connected graph G has three blocks and $k$ cut-vertices, what are the possible values of $k$?
+    
+    $k$ can be 1 or 2. If $k$ is 1, then there is one cut-vertex common to all three blocks. 
+    If $k$ is 2, then each cut-vertex is common to two blocks. One of the blocks will contain both cut-vertices.
+
+
+\item[5.18] Let PG be the Petersen graph. Give an example of
+\item[] (a) a minimum vertex-cut
+\item[]
+    \includegraphics[scale=0.5]{problema.png}
+ 
+\item[] (b) a vertex-cut $U$ s.t. $U$ is not a minimum vertex-cut and no proper subset of $U$ is a vertex-cut
+    
+\includegraphics[scale=1.2]{Untitled design.png}
+
+
+\item[5.23 (b)] Prove that if G is a k-edge-connected graph, then G + K is (k + 1)-edge-connected 
+
+    \begin{proof}
+        Let G be a k-edge connected graph and let X be an edge-cut of G.
+        Since G is k-edge-connected, $|X|$ $\geq$ k. G - X results in two
+        components, G1 and G2. Let y $\in$ V(G1) and let z $\in$ V(G2).
+        Suppose we have G + K, where K is a new vertex connected to every vertex in G. 
+        So G - X + K is connected by the edges yK and zK.
+        In the smallest case, suppose G1 only contains y. Then removing yK would disconnect
+        G - X + K (there would be no alternitive paths to K from G1). 
+        So, to disconnect G + K, we must remove X (containing at least k edges),
+        and the edge yk. The total edge-cut becomes k + 1.
+        If G1 contains more than one vertex, then we must remove all edges between K and G1,
+        in addition to X. Since the edges between K and G1 are at least 1, G is  
+        at least (k + 1)-edge-connected.
+    \end{proof}
+
+\item[5.24] Let G be a graph of order n and let k be an integer with 1 $\leq$ k $\leq$ n - 1. 
+    Prove that if $\delta(G)$ $\geq$ $\frac{n + k - 2}{2}$, then G is k-connected.
+
+    \begin{proof}
+       Assume G is not k-connected. Then there exists a vertex-cut S with $|S|$ $\leq$ k - 1 
+        such that G - S is disconnected. Let the components of G - S be G1 and G2.
+        Let $|V(G1)| = a$ and $|V(G2)| = b$. Then, we have $a + b + |S| = n$.
+        Since there are no edges between G1 and G2, each vertex in G1 is only adjacent to vertices in G1 and S.
+        So, the degree of any vertex in G1 is at most $a + |S| - 1$. 
+        And the degree of any vertex in G2 is at most $b + |S| - 1$.
+        Since $\delta(G)$ $\geq$ $\frac{n + k - 2}{2}$, we have:
+        \[\frac{n + k - 2}{2} \leq a + |S| - 1 \quad \text{and} \quad \frac{n + k - 2}{2} \leq b + |S| - 1\]
+        Rearranging gives:   
+        \[a \geq \frac{n + k - 2}{2} - |S| + 1 \quad \text{and} \quad b \geq \frac{n + k - 2}{2} - |S| + 1\]
+        We can add these two inequalities:
+        \[a + b \geq n + k - 2 - 2|S| + 2\]
+        Since $a + b = n - |S|$, we can substitute to get:
+        \[n - |S| \geq n + k - 2 - 2|S| + 2\]
+        Simplifying:
+        \[|S| \geq k\]
+        This contradicts the assumption that $|S|$ $\leq$ k - 1. Therefore, G must be k-connected.
+        
+    \end{proof}
+
+\end{enumerate}
+\end{document}
