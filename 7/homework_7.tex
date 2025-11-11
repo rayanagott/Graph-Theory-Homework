@@ -41,23 +41,42 @@ Therefore, $G$ has exactly two vertices of odd degree and cannot be Eulerian.
 \item[6.6] Let G be a connected regular graph that is not eulerian. Prove that if $\overline{G}$
     is connected, then $\overline{G}$ is eulerian.
     \begin{proof}
-    
+        Since G is r-regular and not eulerian, r must be odd. By the first theorem,
+        the sum of degrees must be even. Therefore r * n, where n is the order, must be even.
+        Since r is odd, n must be even. Then, in $\overline{G}$:
+        \[
+        \deg_{\overline{G}}(v) = (n - 1) - \deg_G(v)
+        \]
+        which is: ($n$ - 1) - $r$
+
+        We have an even - odd - odd, which is even. 
+        Therefore, $\overline{G}$ is connected and has even degrees, 
+        which satisfies the conditions to be eulerian.
     \end{proof}
+
 \item[6.8 (a)] Show that every nontrivial graph G has a closed spanning walk that contains every edge
  of G exactly twice.
+ \newline
+\begin{proof}
+Let $G$ be a connected graph. We can form multigraph $H$ by replacing every edge of $G$ with two parallel copies. 
+Then each vertex, $v$, of $H$ has degree $\deg_H(v) = 2\deg_G(v)$, so all vertices of $H$ have even degree.  
+$H$ has an Eulerian circuit that traverses each edge of $H$ exactly once (due to doubled edges), starting and ending at $v$. 
+The same circuit must exist in $G$, but each edge is traversed twice. 
+So, $G$ has a closed spanning walk that contains every edge exactly twice.
+\end{proof}
     
 \item[6.10] Let G be a 6-regular graph of order 10 and let $u$, $v$ $\in$ V(G). Prove G - $v$ and G - $u$ - $v$ are all Hamiltonian.
     \begin{proof}
     Let \(G\) be a 6-regular graph of order 10, and let \(u,v \in V(G)\). In \(G - v\), 
     the order is 9. Since \(G\) is 6-regular, removing \(v\) decreases the degree of each 
     of its 6 neighbors by 1, so every vertex in \(G - v\) has degree at least \(5\). Thus 
-    \(\delta(G - v) \ge 5\). By Dirac’s Theorem, if a graph \(H\) of order \(n \ge 3\) 
+    \(\delta(G - v) \ge 5\). By corollary 6.7, if a graph \(H\) of order \(n \ge 3\) 
     satisfies \(\delta(H) \ge n/2\), then \(H\) is Hamiltonian. Here, \(n = 9\) and 
     \(\delta(G - v) = 5 \ge 9/2\), so \(G - v\) is Hamiltonian. Now consider \(G - u - v\). 
     The order is 8. Removing \(u\) and \(v\) decreases the degree of each vertex by at most 
     2 (if the vertex was adjacent to both \(u\) and \(v\)), so \(\delta(G - u - v) \ge 6 - 2 
-    = 4\). Since \(4 = 8/2\), by Dirac’s Theorem, \(G - u - v\) 
-    is also Hamiltonian. Therefore, both \(G - v\) and \(G - u - v\) are Hamiltonian
+    = 4\). Since \(4 = 8/2\), by corollary 6.7, \(G - u - v\) 
+    is also Hamiltonian. Therefore, both \(G - v\) and \(G - u - v\) are Hamiltonian.
     \end{proof}
 
 \item[6.12] Let G be a 3-regular graph of order 12 and H a 4-regular graph
